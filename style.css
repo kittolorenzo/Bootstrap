@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+
+.navbar-brand>img {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav {
+    margin-right: 10px;
+}
+
+.nav-link, .dropdown-item{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:#B5D932;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Shadows Into Light', cursive;
+    color:#F2C849;   
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Shadows Into Light', cursive;
+    color:#248EA6;
+}
+.menu-img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+.info {
+    background-color: cornsilk;
+}
+/* split the bg-images settings and .bg-setting is reusable */
+.bg-section-display-1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIz92V1FVnuwSvC7MBGV7JlzK0B9d4NWt5g&usqp=CAU');
+}
+.bg-setting {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* Common CSS classes */
+/* modify and overwrite bootstrap button */
+.btn {
+    border-radius: 24px;
+    padding: 5px 20px;
+}
+/* create own btn bg color */
+.btn-order {
+    color: white;  
+}
+.btn-order:hover {
+    background-color: rgb(194, 25, 59);
+    color: white;  
+}
+
+/* ipad */
+@media screen and (min-width:768px) {
+    .pic {
+        /* remove the height limit and allow it to auto shrink and grow with the text in the .info box */
+        height: auto;
+    }
+}
+/* laptop */
+@media screen and (min-width:1200px) {
+    .pic {
+        /* set height to 600px when big screen as text needs lesser height space */
+        height:600px
+    }
+    
+}
